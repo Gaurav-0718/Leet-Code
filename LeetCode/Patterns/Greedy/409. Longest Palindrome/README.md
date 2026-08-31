@@ -1,6 +1,6 @@
 # 📝 409. Longest Palindrome (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/longest-palindrome/)
+🔗 [Problem Link](https://leetcode.com/problems/longest-palindrome)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
@@ -8,8 +8,8 @@
 Hash Table, String, Greedy
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 19.3 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
