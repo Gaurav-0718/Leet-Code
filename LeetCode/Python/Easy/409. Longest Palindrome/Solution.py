@@ -2,7 +2,7 @@ class Solution:
     def longestPalindrome(self, s: str) -> int:
         a = {}
         ans=0
-        odd=False
+        flag=False
         for i in s:
             a[i]=a.get(i,0)+1
         for i in a:
@@ -10,6 +10,6 @@ class Solution:
             if not flag:
                 if a[i]%2==1:
                     ans+=1
-                    odd=True
+                    flag=True
 
         return ans
