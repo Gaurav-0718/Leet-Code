@@ -10,7 +10,7 @@ class Solution:
         while p2<len(nums):
             while p2<len(nums) and nums[p2] == 0:
                 p2+=1
-            if nums[p1] == 0:
+            if nums[p1] == 0 and nums[p1] == 0:
                 nums[p1],nums[p2] = nums[p2],nums[p1]
                 p1+=1
             p2+=1
