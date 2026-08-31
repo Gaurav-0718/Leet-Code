@@ -3,7 +3,7 @@ class Solution:
         a = {}
         ans=0
         flag=False
-        for i in s:
+        for i in s.lower():
             a[i]=a.get(i,0)+1
         for i in a:
             ans+=(a[i]//2)*2
