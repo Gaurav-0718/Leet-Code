@@ -1,6 +1,35 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        first_p = bisect_left(nums,target)
-        last_p = bisect_right(nums,target)
-        return [first_p,last_p-1] if first_p != last_p else [-1,-1]
-        
+
+        # Find first occurrence
+        low = 0
+        high = len(nums) - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+
+            if nums[mid] >= target:
+                high = mid - 1
+            else:
+                low = mid + 1
+
+        first = low
+
+        # Find last occurrence
+        low = 0
+        high = len(nums) - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+
+            if nums[mid] > target:
+                high = mid -1
+            else:
+                low = mid + 1
+
+        last = low
+
+        if first == last:
+            return [-1, -1]
+
+        return [first,last-1]
