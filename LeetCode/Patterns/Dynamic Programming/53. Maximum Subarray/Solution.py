@@ -4,6 +4,8 @@ class Solution:
         left = 0
         ans = nums[0]
         curr = 0
+        if n==1:
+            return nums[0]
 
         for i in range(n):
             curr += nums[i]
