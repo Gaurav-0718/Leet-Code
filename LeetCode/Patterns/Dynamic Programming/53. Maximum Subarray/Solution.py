@@ -4,11 +4,12 @@ class Solution:
         left = 0
         ans = nums[0]
         curr = 0
-        if n==1:
-            return nums[0]
 
         for i in range(n):
             curr += nums[i]
+
+            if curr < 0:
+                ans = max(ans, curr)
 
             while left <= i and curr < 0:
                 curr -= nums[left]
